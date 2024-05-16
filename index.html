@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anoona Sithole</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
@@ -18,17 +20,48 @@
            </p>
         </section>
         <section>
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="https://github.com/Anoonaa/printf">Printf</a></li>
-                <li><a href="https://github.com/Anoonaa/simple_shell">Simple Shell </a></li>
-                <li><a href="https://github.com/Anoonaa/monty">Monty</a></li>
-            </ul>
+             
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>Printf</h3>
+            <p>a custom _printf() function that emulates the functionality of the standard library function printf().</p>
+            <a href="github.com/Anoonaa/Printf">View Details</a>
+        </div>
+        <div class="project">
+            <h3>Simple Shell</h3>
+            <p>A Unix command language interpreter that executes commands read from the standard input or from a file..</p>
+            <a href="github.com/Anoonaa/simple_shell">View Details</a>
+        </div>
+        <div class="project">
+            <h3>Monty byte code interpreter</h3>
+            <p> A simple byte code interpreter, implemented in C.</p>
+            <a href="github.com/Anoonaa/Monty">View Details</a>
+        </div>
+    </div>
+</section>
+<style>
+.Printf {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.Simple Shell {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.Monty h3 {
+    margin-bottom: 10px;
+}
+</style>
         </section>
         <section>
             <h2>Contact</h2>
             <p>Email: <a href="mailto:anoonasithole0@gmail.com">anoonasithole0@gmail.com</a></p>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
